@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurante Delicias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #fafafa;
+      color: #333;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      ),
+      url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #e63946;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      display: inline-block;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .btn:hover {
+      background: #d62828;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      animation: slideUp 1.2s ease;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #e63946;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: translateY(-10px);
+    }
+
+    .item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .item div {
+      padding: 15px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>Restaurante Delicias</h1>
+    <p>Sabores que enamoran</p>
+    <a href="#menu" class="btn">Ver Menú</a>
+  </div>
+</header>
+
+<section id="menu">
+  <h2>Nuestro Menú</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1604908177522-432dc0a60e7c">
+      <div>
+        <h3>Plato Especial</h3>
+        <p>Delicioso plato preparado con ingredientes frescos.</p>
+        <strong>S/ 25.00</strong>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+      <div>
+        <h3>Plato Criollo</h3>
+        <p>Tradición y sabor peruano.</p>
+        <strong>S/ 22.00</strong>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+      <div>
+        <h3>Bebida Natural</h3>
+        <p>Refrescante y saludable.</p>
+        <strong>S/ 8.00</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Sobre Nosotros</h2>
+  <p style="text-align:center">
+    Somos un restaurante comprometido con la calidad, el sabor y la atención.
+  </p>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <p style="text-align:center">
+    📍 Huaral, Perú<br>
+    📞 WhatsApp: +51 999 999 999<br>
+    ⏰ Lunes a Domingo: 12:00 pm – 10:00 pm
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Restaurante Delicias</p>
+</footer>
+
+</body>
+</html>
